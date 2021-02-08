@@ -1,0 +1,153 @@
+body{
+    text-transform: capitalize;
+    font-size: 16px;
+    display: flex;
+    color: white;
+}
+
+#aside{
+    
+    padding-top: 3em;
+    padding-bottom: 40px;
+    padding-left: 3em;
+    padding-right: 3em;
+
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow-y: hidden;
+    background: #020b4a;
+
+    text-align: center !important;
+
+    width: 20%;
+}
+
+.logo{
+    // color: $black;
+    // font-family: $popi;
+    margin-bottom: 2.5em;
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.logo_img {
+    filter: invert(100%);
+    width: 30%;
+}
+
+.aside__menu_list{
+    justify-content: center !important;
+}
+// ul{
+//     list-style-type: none;
+//     padding: 0;
+// }
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li.aside__menu_list_item{
+    margin: 0 0 15px 0;
+    padding: 10px 0;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+body {padding:2%;}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+// animation is slow so you can see it, but probably should be .25 or .15
+$thetransition: all .5s cubic-bezier(1,.25,0,.75) 0s;
+
+a {
+    color:white;
+    text-decoration: none;
+    position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: $thetransition;
+  }
+  &:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+}
+
+
+
+// a:hover{
+//     text-decoration: underline;
+// }
+
+.aside__footer{
+    justify-content: center !important;
+
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.aside__footer_list{
+    display: flex;
+    justify-content: center !important;
+}
+h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+h3:first-letter{
+    text-transform: capitalize !important;;
+}
+
+.aside__contact_item{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.aside__menu_list{
+    margin: 0 0 15px 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+// css Gallery
+#gallery{
+    width: 80%;
+}
+.gallery__section{
+    display: block;
+}
