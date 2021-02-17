@@ -184,12 +184,15 @@ function clean(params) {
 let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts))
 let watch = gulp.parallel(build, watchFiles, browserSync)
 
-exports.fontsStyle= fontsStyle
-exports.fonts= fonts
-exports.images= images
+exports.fontsStyle = fontsStyle
+exports.fonts = fonts
+exports.images = images
 exports.js = js
 exports.css = css
 exports.html = html
 exports.build = build
 exports.watch = watch
 exports.default = watch
+
+
+
